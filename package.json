@@ -1,0 +1,20 @@
+{
+  "name": "namaste-restaurant-app",
+  "version": "1.0.0",
+  "description": "Building a restaurant page",
+  "scripts": {
+    "start": "parcel index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Sai yeshwanth",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.9.3",
+    "process": "^0.11.10"
+  }
+}
