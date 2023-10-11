@@ -1,15 +1,16 @@
 // RestauranCard
 export const RestauranCard = (props) => {
-    const {resName, resRating} = props
+    const {data} = props
+    console.log(data)
     return (
         <div className='res-card'>
             <img
                 className='res-img-logo'
-                src='https://images.pexels.com/photos/4393021/pexels-photo-4393021.jpeg?auto=compress&cs=tinysrgb&w=300' />
-            <h4>{resName}</h4>
-            <h4>Burgers, Biryani</h4>
-            <h4>{resRating} stars</h4>
-            <h4>25 min</h4>
+                src={data.image} />
+            <h4>{data.name}</h4>
+            <p>{data.detail}</p>
+            <h4>{data.rating} stars</h4>
+            <h4>{data.time}</h4>
         </div>
     )
 }

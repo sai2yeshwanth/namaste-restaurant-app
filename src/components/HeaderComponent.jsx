@@ -1,3 +1,5 @@
+import { LOGO_URL } from "../utils/constants"
+
 // header componet
 export const HeadingComponent = () => {
     return (
@@ -5,7 +7,7 @@ export const HeadingComponent = () => {
             <div className='logo-container'>
                 <img
                     className='logo'
-                    src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO2LZsFdj8LmrJ3Ixyibv2fVrDn4qex1QheQ&usqp=CAU' />
+                    src={LOGO_URL} />
             </div>
             <div className='nav-items'>
                 <ul>

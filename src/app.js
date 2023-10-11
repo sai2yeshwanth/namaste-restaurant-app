@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client'
-import {HeadingComponent} from './components/HeaderComponent'
-import {BodyComponet} from './components/BodyComponet'
+import { HeadingComponent } from './components/HeaderComponent'
+import { BodyComponet } from './components/BodyComponet'
 
 
 
@@ -10,13 +10,10 @@ import {BodyComponet} from './components/BodyComponet'
 const ApplayOut = () => {
     return (
         <div className='app'>
-
             {/* header */}
             <HeadingComponent />
-
             {/* Body */}
             <BodyComponet />
-
             {/* footer */}
         </div>
     )

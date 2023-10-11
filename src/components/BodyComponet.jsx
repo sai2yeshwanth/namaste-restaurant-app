@@ -1,4 +1,5 @@
 import {RestauranCard} from './RestauranCard'
+import {resData} from '../utils/constants'
 
 //body Componet
 export const BodyComponet = () => {
@@ -7,8 +8,13 @@ export const BodyComponet = () => {
             {/* sesrch bar */}
             <div className='search'>Search</div>
             <div className='res-container'>
-                <RestauranCard resName='one' resRating = '4.5' />
-                <RestauranCard resName='two' resRating = '4'/>
+                {
+                    resData.map((item)=> (
+                        <RestauranCard data={item} />
+
+                    )
+                    )
+                }
 
             </div>
 
