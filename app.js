@@ -23,19 +23,17 @@ const HeadingComponent = () => {
     )
 }
 // RestauranCard
-const RestauranCard = () => {
+const RestauranCard = (props) => {
+    const {resName, resRating} = props
     return (
         <div className='res-card'>
             <img
                 className='res-img-logo'
                 src='https://images.pexels.com/photos/4393021/pexels-photo-4393021.jpeg?auto=compress&cs=tinysrgb&w=300' />
-            <h4>KFC</h4>
+            <h4>{resName}</h4>
             <h4>Burgers, Biryani</h4>
-            <h4>4.5 stars</h4>
+            <h4>{resRating} stars</h4>
             <h4>25 min</h4>
-
-
-            <img />
         </div>
     )
 }
@@ -47,18 +45,8 @@ const BodyComponet = () => {
             {/* sesrch bar */}
             <div className='search'>Search</div>
             <div className='res-container'>
-                <RestauranCard />
-                <RestauranCard />
-                <RestauranCard />
-                <RestauranCard />
-                <RestauranCard />
-                <RestauranCard />
-                <RestauranCard />
-                <RestauranCard />
-                <RestauranCard />
-                <RestauranCard />
-                <RestauranCard />
-                <RestauranCard />
+                <RestauranCard resName='one' resRating = '4.5' />
+                <RestauranCard resName='two' resRating = '4'/>
 
             </div>
 
