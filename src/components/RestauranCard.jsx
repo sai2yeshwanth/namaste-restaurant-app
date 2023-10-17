@@ -1,7 +1,7 @@
 // RestauranCard
 export const RestauranCard = (props) => {
   const { data } = props;
-  console.log(data.info);
+  // console.log(data.info);
   return (
     <div className="res-card">
       <img
