@@ -34,7 +34,7 @@ export const BodyComponet = () => {
           className="filter-btn"
           onClick={() => {
             const filterdRestaurants = listOfRestaurants.filter(
-              (item) => item.rating > 4
+              (item) => item.info.avgRating > 4.5
             );
             setListOfRestaurants(filterdRestaurants);
           }}
