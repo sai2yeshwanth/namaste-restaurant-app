@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { LOGO_URL } from "../utils/constants";
-
+import { Link } from "react-router-dom";
 // header componet
 export const HeadingComponent = () => {
   const [buttonReact, setButtonReact] = useState("Login");
-  console.log("hello")
+  console.log("hello");
   return (
     <div className="header">
       <div className="logo-container">
@@ -12,9 +12,13 @@ export const HeadingComponent = () => {
       </div>
       <div className="nav-items">
         <ul>
-          <li>Home</li>
-          <li>Adout Us</li>
-          <li>Contact Us</li>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to='/about'>Adout Us</Link>
+          </li>
+          <li><Link to='/contact'> Contact Us</Link></li>
           <li>Cart</li>
           <button
             onClick={() =>
