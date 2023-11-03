@@ -4,6 +4,7 @@ import { LOGO_URL } from "../utils/constants";
 // header componet
 export const HeadingComponent = () => {
   const [buttonReact, setButtonReact] = useState("Login");
+  console.log("hello")
   return (
     <div className="header">
       <div className="logo-container">

@@ -42,12 +42,12 @@ export const BodyComponet = () => {
             value={searchText}
             onChange={(event) => {
               setSearchText(event.target.value);
-              // const filterdRestaurants = listOfRestaurants.filter((item) =>
-              //   item.info.name
-              //     .toLowerCase()
-              //     .includes(event.target.value.toLowerCase())
-              // );
-              // setFilterdRestaurants(filterdRestaurants);
+              const filterdRestaurants = listOfRestaurants.filter((item) =>
+                item.info.name
+                  .toLowerCase()
+                  .includes(event.target.value.toLowerCase())
+              );
+              setFilterdRestaurants(filterdRestaurants);
             }}
           />
           <button
